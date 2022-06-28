@@ -23,13 +23,50 @@ a
     font-size: 35px;
 }
 
+a:hover[id="discord"]
+{
+    color: #5865f2;
+}
+
+a:hover[id="github"]
+{
+    color: #f0f6fc;
+}
+
+a:hover[id="youtube"]
+{
+    color: #e61717;
+}
+
+a:hover[id="spotify"]
+{
+    color: #1db954;
+}
+
+a:hover[id="steam"]
+{
+    color: #2b31c7;
+}
+
 a:hover
 {
-    filter: drop-shadow(0 0 8px #eeeeee);
+    filter: drop-shadow(0 0 8px currentcolor);
+}
+
+h1
+{
+    margin: 0;
 }
 
 #main
 {
+    
+    backdrop-filter: blur(10px);
+    background-color: #0000000a;
+    padding: 25px;
+    border-radius: 10px;
+    
+
     transition-duration: 1s;
     opacity: 0;
 
