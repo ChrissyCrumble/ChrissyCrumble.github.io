@@ -35,7 +35,7 @@ a:hover[id="github"]
 
 a:hover[id="youtube"]
 {
-    color: #e61717;
+    color: #d62424;
 }
 
 a:hover[id="spotify"]
@@ -45,7 +45,7 @@ a:hover[id="spotify"]
 
 a:hover[id="steam"]
 {
-    color: #2b31c7;
+    color: #f0f6fc;
 }
 
 a:hover
@@ -53,22 +53,18 @@ a:hover
     filter: drop-shadow(0 0 8px currentcolor);
 }
 
-h1
+h1, h2, h3
 {
     margin: 0;
 }
 
 #main
 {
-    
-    backdrop-filter: blur(10px);
-    background-color: #0000000a;
-    padding: 25px;
-    border-radius: 10px;
-    
-
     transition-duration: 1s;
     opacity: 0;
+
+    padding: 25px;
+    border-radius: 10px;
 
     position: absolute;
     top: 50%;
