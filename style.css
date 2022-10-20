@@ -90,7 +90,7 @@ h1, h2, h3
 
 @keyframes onload
 {
-    0%
+    from
     {
         top: -25%;
         left: 50%;
@@ -101,7 +101,7 @@ h1, h2, h3
         opacity: 0.0;
     }
 
-    100%
+    to
     {
         top: 50%;
         left: 50%;
