@@ -96,7 +96,7 @@ h1, h2, h3
         left: 50%;
 
         transform: translate(-50%, 0%) scale(2.0);
-        filter: blur(8px);
+        /* filter: blur(8px); */
 
         opacity: 0.0;
     }
