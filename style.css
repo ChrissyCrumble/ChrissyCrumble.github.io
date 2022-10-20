@@ -83,26 +83,25 @@ h1, h2, h3
     transform: translate(-50%, -50%);
 
     animation-name: onload;
-    animation-delay: 0.0s;
-    animation-duration: 1.0s;
+    animation-duration: 1.125s;
     animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1.0);
     animation-iteration-count: 1;
 }
 
 @keyframes onload
 {
-    from
+    0%
     {
         top: -25%;
         left: 50%;
 
         transform: translate(-50%, 0%) scale(2.0);
-        /* filter: blur(8px); */
+        filter: blur(8px);
 
         opacity: 0.0;
     }
 
-    to
+    100%
     {
         top: 50%;
         left: 50%;
