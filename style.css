@@ -13,7 +13,7 @@ body
     margin-top: 32px;
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
 }
 
@@ -40,8 +40,8 @@ a
 {
     border-radius: 25%;
 
-    box-shadow: 0 0 15px #222222;
-    transform: scale(1.1);
+    box-shadow: 0 0 15px #111111;
+    transform: scale(1.125);
 }
 
 h1, h2, h3
@@ -58,6 +58,20 @@ h1, h2, h3
     justify-items: center;
 
     margin-bottom: 32px;
+
+    transition: ease-in-out;
+    transition-duration: 250ms;
+
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#profile:hover
+{
+    transform: scale(1.25);
+    box-shadow: 0 0 15px #111111;
+
+    background-color: #222222;
 }
 
 #profile h1, h2, h3
@@ -73,7 +87,7 @@ h1, h2, h3
 
 #main
 {
-    padding: 25px;
+    padding: 16px;
     border-radius: 16px;
     background-color: #151515;
 
@@ -82,15 +96,18 @@ h1, h2, h3
     left: 50%;
     transform: translate(-50%, -50%);
 
-    animation-name: onload;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+
+    animation-name: main_onload;
     animation-duration: 1.125s;
     animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1.0);
     animation-iteration-count: 1;
 
-    min-width: 296px;
+    min-width: max-content;
 }
 
-@keyframes onload
+@keyframes main_onload
 {
     from
     {
