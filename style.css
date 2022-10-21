@@ -72,7 +72,7 @@ h1, h2, h3
     padding: 10px;
 
     animation-name: profile_onload;
-    animation-duration: 750ms;
+    animation-duration: 550ms;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
 }
@@ -120,9 +120,22 @@ h1, h2, h3
 
 @keyframes profile_onload
 {
-    from
+    0%
     {
         opacity: 0.0;
+        transform: scale(0.25);
+    }
+
+    50%
+    {
+        opacity: 0.0;
+        transform:scale(0.25);
+    }
+
+    100%
+    {
+        opacity: 1.0;
+        transform: scale(1.0);
     }
 }
 
@@ -154,7 +167,7 @@ h1, h2, h3
         top: -25%;
         left: 50%;
 
-        transform: translate(-50%, 0%) scale(2.0);
+        transform: translate(-50%, 0%) scale(1.75);
         /* filter: blur(8px); */
 
         opacity: 0.0;
